@@ -1,0 +1,104 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header component renders correctly 1`] = `
+<div>
+  <div
+    class="tw-bg-white tw-py-4 tw-mb-4 tw-flex tw-justify-between tw-items-center tw-flex-row MuiBox-root css-0"
+  >
+    <div
+      class="MuiInputBase-root MuiInput-root MuiInputBase-colorPrimary tw-text-22 tw-font-bold tw-w-48 css-1p0keud-MuiInputBase-root-MuiInput-root-MuiSelect-root"
+    >
+      <div
+        aria-controls=":r0:"
+        aria-expanded="false"
+        aria-haspopup="listbox"
+        class="MuiSelect-select MuiSelect-standard MuiInputBase-input MuiInput-input css-1rxz5jq-MuiSelect-select-MuiInputBase-input-MuiInput-input"
+        role="combobox"
+        tabindex="0"
+      >
+        <span
+          class="notranslate"
+        >
+          ​
+        </span>
+      </div>
+      <input
+        aria-hidden="true"
+        aria-invalid="false"
+        class="MuiSelect-nativeInput css-yf8vq0-MuiSelect-nativeInput"
+        tabindex="-1"
+        value="0"
+      />
+      <svg
+        aria-hidden="true"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeLarge css-tzssek-MuiSvgIcon-root"
+        data-testid="ExpandMoreIcon"
+        focusable="false"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M16.59 8.59 12 13.17 7.41 8.59 6 10l6 6 6-6z"
+        />
+      </svg>
+    </div>
+    <div
+      class="MuiTabs-root tw-bg-white tw-shadow-sm tw-rounded-lg css-1ujnqem-MuiTabs-root"
+    >
+      <div
+        class="MuiTabs-scroller MuiTabs-fixed css-jpln7h-MuiTabs-scroller"
+        style="overflow: hidden; margin-right: 0px; margin-bottom: 0px;"
+      >
+        <div
+          aria-label="tabs"
+          class="MuiTabs-flexContainer css-heg063-MuiTabs-flexContainer"
+          role="tablist"
+        >
+          <button
+            aria-selected="false"
+            class="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary tw-rounded-lg tw-bg-transparent tw-text-gray-500 css-1h9z7r5-MuiButtonBase-root-MuiTab-root"
+            role="tab"
+            tabindex="-1"
+            type="button"
+          >
+            Dashboard
+            <span
+              class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+            />
+          </button>
+          <button
+            aria-selected="true"
+            class="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary Mui-selected tw-rounded-lg tw-bg-blue-100 tw-text-white css-1h9z7r5-MuiButtonBase-root-MuiTab-root"
+            role="tab"
+            tabindex="0"
+            type="button"
+          >
+            Submission
+            <span
+              class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+            />
+          </button>
+        </div>
+        <span
+          class="MuiTabs-indicator css-1aquho2-MuiTabs-indicator"
+          style="display: none; left: 0px; width: 0px;"
+        />
+      </div>
+    </div>
+    <div
+      class="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault css-17o22dy-MuiAvatar-root"
+    >
+      <svg
+        aria-hidden="true"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+        data-testid="PersonIcon"
+        focusable="false"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4m0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4"
+        />
+      </svg>
+    </div>
+  </div>
+</div>
+`;

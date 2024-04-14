@@ -1,0 +1,179 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DrawerMenu component renders correctly 1`] = `
+<div>
+  <div>
+    <button
+      class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary tw-mt-2 css-1e6y48t-MuiButtonBase-root-MuiButton-root"
+      tabindex="0"
+      type="button"
+    >
+      <img
+        alt="Binoloop"
+        data-nimg="1"
+        decoding="async"
+        height="40"
+        loading="lazy"
+        src="/binoloop.svg"
+        style="color: transparent;"
+        width="40"
+      />
+      <span
+        class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+      />
+    </button>
+    <div
+      class="MuiDrawer-root MuiDrawer-docked css-a2rad9-MuiDrawer-docked"
+    >
+      <div
+        class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation0 MuiDrawer-paper MuiDrawer-paperAnchorLeft MuiDrawer-paperAnchorDockedLeft css-12i7wg6-MuiPaper-root-MuiDrawer-paper"
+      >
+        <div
+          class="MuiBox-root css-0"
+          role="presentation"
+        >
+          <ul
+            class="MuiList-root MuiList-padding css-h4y409-MuiList-root"
+          >
+            <div
+              class="tw-flex tw-items-center"
+            >
+              <div
+                class="MuiButtonBase-root MuiListItemButton-root MuiListItemButton-gutters MuiListItemButton-root MuiListItemButton-gutters css-16ac5r2-MuiButtonBase-root-MuiListItemButton-root"
+                role="button"
+                tabindex="0"
+              >
+                <div
+                  class="MuiListItemIcon-root css-cveggr-MuiListItemIcon-root"
+                >
+                  <img
+                    alt=""
+                    data-nimg="1"
+                    decoding="async"
+                    fetchpriority="high"
+                    height="60"
+                    src="/binoloop.svg"
+                    style="color: transparent;"
+                    width="60"
+                  />
+                </div>
+                <span
+                  class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                />
+              </div>
+            </div>
+            <div
+              class="tw-flex tw-items-center"
+            >
+              <div
+                class="MuiButtonBase-root MuiListItemButton-root MuiListItemButton-gutters MuiListItemButton-root MuiListItemButton-gutters css-16ac5r2-MuiButtonBase-root-MuiListItemButton-root"
+                role="button"
+                tabindex="0"
+              >
+                <div
+                  class="MuiListItemIcon-root css-cveggr-MuiListItemIcon-root"
+                >
+                  <img
+                    alt="home"
+                    data-nimg="1"
+                    decoding="async"
+                    height="60"
+                    loading="lazy"
+                    src="/home.svg"
+                    style="color: transparent;"
+                    width="60"
+                  />
+                </div>
+                <span
+                  class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                />
+              </div>
+            </div>
+            <div
+              class="tw-flex tw-items-center"
+            >
+              <div
+                class="MuiButtonBase-root MuiListItemButton-root MuiListItemButton-gutters MuiListItemButton-root MuiListItemButton-gutters css-16ac5r2-MuiButtonBase-root-MuiListItemButton-root"
+                role="button"
+                tabindex="0"
+              >
+                <div
+                  class="MuiListItemIcon-root css-cveggr-MuiListItemIcon-root"
+                >
+                  <img
+                    alt="folderOpen"
+                    data-nimg="1"
+                    decoding="async"
+                    height="60"
+                    loading="lazy"
+                    src="/folderOpen.svg"
+                    style="color: transparent;"
+                    width="60"
+                  />
+                </div>
+                <span
+                  class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                />
+              </div>
+            </div>
+            <div
+              class="tw-flex tw-items-center"
+            >
+              <div
+                class="MuiButtonBase-root MuiListItemButton-root MuiListItemButton-gutters MuiListItemButton-root MuiListItemButton-gutters css-16ac5r2-MuiButtonBase-root-MuiListItemButton-root"
+                role="button"
+                tabindex="0"
+              >
+                <div
+                  class="MuiListItemIcon-root css-cveggr-MuiListItemIcon-root"
+                >
+                  <img
+                    alt="folder"
+                    data-nimg="1"
+                    decoding="async"
+                    height="60"
+                    loading="lazy"
+                    src="/folder.svg"
+                    style="color: transparent;"
+                    width="60"
+                  />
+                </div>
+                <span
+                  class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                />
+              </div>
+            </div>
+            <div
+              class="tw-flex tw-items-center"
+            >
+              <div
+                class="MuiButtonBase-root MuiListItemButton-root MuiListItemButton-gutters MuiListItemButton-root MuiListItemButton-gutters css-16ac5r2-MuiButtonBase-root-MuiListItemButton-root"
+                role="button"
+                tabindex="0"
+              >
+                <div
+                  class="MuiListItemIcon-root css-cveggr-MuiListItemIcon-root"
+                >
+                  <img
+                    alt="plus"
+                    data-nimg="1"
+                    decoding="async"
+                    height="60"
+                    loading="lazy"
+                    src="/plus.svg"
+                    style="color: transparent;"
+                    width="60"
+                  />
+                </div>
+                <span
+                  class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                />
+              </div>
+            </div>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

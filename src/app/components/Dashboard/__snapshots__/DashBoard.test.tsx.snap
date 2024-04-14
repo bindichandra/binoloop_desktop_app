@@ -1,0 +1,660 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Dashboard component Renders correctly 1`] = `
+<div>
+  <div
+    class="tw-flex tw-mb-8"
+  >
+    <div>
+      <button
+        class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary tw-mt-2 css-1e6y48t-MuiButtonBase-root-MuiButton-root"
+        tabindex="0"
+        type="button"
+      >
+        <img
+          alt="Binoloop"
+          data-nimg="1"
+          decoding="async"
+          height="40"
+          loading="lazy"
+          src="/binoloop.svg"
+          style="color: transparent;"
+          width="40"
+        />
+        <span
+          class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+        />
+      </button>
+      <div
+        class="MuiDrawer-root MuiDrawer-docked css-a2rad9-MuiDrawer-docked"
+      >
+        <div
+          class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation0 MuiDrawer-paper MuiDrawer-paperAnchorLeft MuiDrawer-paperAnchorDockedLeft css-12i7wg6-MuiPaper-root-MuiDrawer-paper"
+        >
+          <div
+            class="MuiBox-root css-0"
+            role="presentation"
+          >
+            <ul
+              class="MuiList-root MuiList-padding css-h4y409-MuiList-root"
+            >
+              <div
+                class="tw-flex tw-items-center"
+              >
+                <div
+                  class="MuiButtonBase-root MuiListItemButton-root MuiListItemButton-gutters MuiListItemButton-root MuiListItemButton-gutters css-16ac5r2-MuiButtonBase-root-MuiListItemButton-root"
+                  role="button"
+                  tabindex="0"
+                >
+                  <div
+                    class="MuiListItemIcon-root css-cveggr-MuiListItemIcon-root"
+                  >
+                    <img
+                      alt=""
+                      data-nimg="1"
+                      decoding="async"
+                      fetchpriority="high"
+                      height="60"
+                      src="/binoloop.svg"
+                      style="color: transparent;"
+                      width="60"
+                    />
+                  </div>
+                  <span
+                    class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                  />
+                </div>
+              </div>
+              <div
+                class="tw-flex tw-items-center"
+              >
+                <div
+                  class="MuiButtonBase-root MuiListItemButton-root MuiListItemButton-gutters MuiListItemButton-root MuiListItemButton-gutters css-16ac5r2-MuiButtonBase-root-MuiListItemButton-root"
+                  role="button"
+                  tabindex="0"
+                >
+                  <div
+                    class="MuiListItemIcon-root css-cveggr-MuiListItemIcon-root"
+                  >
+                    <img
+                      alt="home"
+                      data-nimg="1"
+                      decoding="async"
+                      height="60"
+                      loading="lazy"
+                      src="/home.svg"
+                      style="color: transparent;"
+                      width="60"
+                    />
+                  </div>
+                  <span
+                    class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                  />
+                </div>
+              </div>
+              <div
+                class="tw-flex tw-items-center"
+              >
+                <div
+                  class="MuiButtonBase-root MuiListItemButton-root MuiListItemButton-gutters MuiListItemButton-root MuiListItemButton-gutters css-16ac5r2-MuiButtonBase-root-MuiListItemButton-root"
+                  role="button"
+                  tabindex="0"
+                >
+                  <div
+                    class="MuiListItemIcon-root css-cveggr-MuiListItemIcon-root"
+                  >
+                    <img
+                      alt="folderOpen"
+                      data-nimg="1"
+                      decoding="async"
+                      height="60"
+                      loading="lazy"
+                      src="/folderOpen.svg"
+                      style="color: transparent;"
+                      width="60"
+                    />
+                  </div>
+                  <span
+                    class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                  />
+                </div>
+              </div>
+              <div
+                class="tw-flex tw-items-center"
+              >
+                <div
+                  class="MuiButtonBase-root MuiListItemButton-root MuiListItemButton-gutters MuiListItemButton-root MuiListItemButton-gutters css-16ac5r2-MuiButtonBase-root-MuiListItemButton-root"
+                  role="button"
+                  tabindex="0"
+                >
+                  <div
+                    class="MuiListItemIcon-root css-cveggr-MuiListItemIcon-root"
+                  >
+                    <img
+                      alt="folder"
+                      data-nimg="1"
+                      decoding="async"
+                      height="60"
+                      loading="lazy"
+                      src="/folder.svg"
+                      style="color: transparent;"
+                      width="60"
+                    />
+                  </div>
+                  <span
+                    class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                  />
+                </div>
+              </div>
+              <div
+                class="tw-flex tw-items-center"
+              >
+                <div
+                  class="MuiButtonBase-root MuiListItemButton-root MuiListItemButton-gutters MuiListItemButton-root MuiListItemButton-gutters css-16ac5r2-MuiButtonBase-root-MuiListItemButton-root"
+                  role="button"
+                  tabindex="0"
+                >
+                  <div
+                    class="MuiListItemIcon-root css-cveggr-MuiListItemIcon-root"
+                  >
+                    <img
+                      alt="plus"
+                      data-nimg="1"
+                      decoding="async"
+                      height="60"
+                      loading="lazy"
+                      src="/plus.svg"
+                      style="color: transparent;"
+                      width="60"
+                    />
+                  </div>
+                  <span
+                    class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                  />
+                </div>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="tw-flex tw-flex-col tw-w-full tw-mx-4 MuiBox-root css-0"
+    >
+      <div
+        class="tw-bg-white tw-py-4 tw-mb-4 tw-flex tw-justify-between tw-items-center tw-flex-row MuiBox-root css-0"
+      >
+        <div
+          class="MuiInputBase-root MuiInput-root MuiInputBase-colorPrimary tw-text-22 tw-font-bold tw-w-48 css-1p0keud-MuiInputBase-root-MuiInput-root-MuiSelect-root"
+        >
+          <div
+            aria-controls=":r0:"
+            aria-expanded="false"
+            aria-haspopup="listbox"
+            class="MuiSelect-select MuiSelect-standard MuiInputBase-input MuiInput-input css-1rxz5jq-MuiSelect-select-MuiInputBase-input-MuiInput-input"
+            role="combobox"
+            tabindex="0"
+          >
+            Binoloop
+          </div>
+          <input
+            aria-hidden="true"
+            aria-invalid="false"
+            class="MuiSelect-nativeInput css-yf8vq0-MuiSelect-nativeInput"
+            tabindex="-1"
+            value="1"
+          />
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root MuiSvgIcon-fontSizeLarge css-tzssek-MuiSvgIcon-root"
+            data-testid="ExpandMoreIcon"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M16.59 8.59 12 13.17 7.41 8.59 6 10l6 6 6-6z"
+            />
+          </svg>
+        </div>
+        <div
+          class="MuiTabs-root tw-bg-white tw-shadow-sm tw-rounded-lg css-1ujnqem-MuiTabs-root"
+        >
+          <div
+            class="MuiTabs-scroller MuiTabs-fixed css-jpln7h-MuiTabs-scroller"
+            style="overflow: hidden; margin-right: 0px; margin-bottom: 0px;"
+          >
+            <div
+              aria-label="tabs"
+              class="MuiTabs-flexContainer css-heg063-MuiTabs-flexContainer"
+              role="tablist"
+            >
+              <button
+                aria-selected="true"
+                class="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary Mui-selected tw-rounded-lg tw-bg-blue-100 tw-text-white css-1h9z7r5-MuiButtonBase-root-MuiTab-root"
+                role="tab"
+                tabindex="0"
+                type="button"
+              >
+                Dashboard
+                <span
+                  class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                />
+              </button>
+              <button
+                aria-selected="false"
+                class="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary tw-rounded-lg tw-bg-transparent tw-text-gray-500 css-1h9z7r5-MuiButtonBase-root-MuiTab-root"
+                role="tab"
+                tabindex="-1"
+                type="button"
+              >
+                Submission
+                <span
+                  class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                />
+              </button>
+            </div>
+            <span
+              class="MuiTabs-indicator css-1aquho2-MuiTabs-indicator"
+              style="display: none; left: 0px; width: 0px;"
+            />
+          </div>
+        </div>
+        <div
+          class="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault css-17o22dy-MuiAvatar-root"
+        >
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+            data-testid="PersonIcon"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4m0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4"
+            />
+          </svg>
+        </div>
+      </div>
+      <div
+        class="tw-flex-col md:tw-flex-row sm:tw-flex-col lg:tw-flex-row xl:tw-flex-row tw-flex tw-gap-4 tw-my-4 MuiBox-root css-0"
+      >
+        <div
+          class="tw-bg-gradient-to-br tw-from-blue-500 tw-to-teal tw-shadow-md tw-w-72 tw-h-40 tw-rounded-xl tw-items-center tw-flex-col tw-flex tw-justify-center MuiBox-root css-0"
+        >
+          <span
+            class="tw-text-center tw-text-white tw-text-lg tw-mb-2"
+          >
+            Total
+          </span>
+          <span
+            class="tw-text-center tw-text-white tw-text-5xl tw-font-bold"
+          >
+            0
+          </span>
+        </div>
+        <div
+          class=" tw-shadow-md tw-w-72 tw-h-40 tw-rounded-xl tw-items-center tw-flex-col tw-flex tw-justify-center MuiBox-root css-0"
+        >
+          <span
+            class="tw-text-center tw-text-grey tw-text-lg tw-mb-2"
+          >
+            Percentage Assessed
+          </span>
+          <span
+            class="tw-text-center tw-text-blue-500 tw-text-5xl tw-font-bold"
+          >
+            100%
+            <span
+              class="tw-text-center tw-bg-blue-200 tw-text-blue-100 tw-text-xs tw-p-1 tw-ml-2"
+            >
+              18/18
+            </span>
+          </span>
+        </div>
+        <div
+          class="tw-bg-white tw-shadow-md tw-flex-grow  md:tw-h-40 sm:tw-h-0 lg:tw-h-40 xl:tw-h-40 tw-rounded-xl tw-justify-center tw-flex tw-flex-col  MuiBox-root css-0"
+        >
+          <span
+            class="tw-text-center tw-text-grey tw-text-lg"
+          >
+            Submission Quality
+          </span>
+          <div
+            class="tw-grid tw-grid-cols-2 tw-gap-0 tw-m-4 md:tw-grid-cols-4 sm:tw-grid-cols-2 lg:tw-grid-cols-4 xl:tw-grid-cols-4"
+          >
+            <div
+              class="tw-flex tw-bg-opacity-200 tw-items-center tw-justify-center tw-p-4 tw-flex-col "
+              style="background-color: rgba(12, 201, 110, 0.2); color: rgb(12, 201, 110);"
+            >
+              <span
+                class="tw-text-center tw-text-md "
+              >
+                Excellent
+              </span>
+              <span
+                class="tw-text-center tw-text-md"
+              >
+                0
+              </span>
+            </div>
+            <div
+              class="tw-flex tw-bg-opacity-200 tw-items-center tw-justify-center tw-p-4 tw-flex-col "
+              style="background-color: rgba(76, 126, 255, 0.2); color: rgb(76, 126, 255);"
+            >
+              <span
+                class="tw-text-center tw-text-md "
+              >
+                Good
+              </span>
+              <span
+                class="tw-text-center tw-text-md"
+              >
+                0
+              </span>
+            </div>
+            <div
+              class="tw-flex tw-bg-opacity-200 tw-items-center tw-justify-center tw-p-4 tw-flex-col "
+              style="background-color: rgba(255, 156, 41, 0.2); color: rgb(255, 156, 41);"
+            >
+              <span
+                class="tw-text-center tw-text-md "
+              >
+                Satisfactory
+              </span>
+              <span
+                class="tw-text-center tw-text-md"
+              >
+                0
+              </span>
+            </div>
+            <div
+              class="tw-flex tw-bg-opacity-200 tw-items-center tw-justify-center tw-p-4 tw-flex-col "
+              style="background-color: rgba(255, 0, 77, 0.2); color: rgb(255, 0, 77);"
+            >
+              <span
+                class="tw-text-center tw-text-md "
+              >
+                Needs Improvement
+              </span>
+              <span
+                class="tw-text-center tw-text-md"
+              >
+                0
+              </span>
+            </div>
+          </div>
+        </div>
+        <div
+          class=" tw-shadow-md tw-w-72 tw-h-40 tw-rounded-xl tw-items-center tw-flex-col tw-flex tw-justify-center MuiBox-root css-0"
+        >
+          <span
+            class="tw-text-center tw-text-grey tw-text-lg tw-mb-2"
+          >
+            Interview Shortlist
+          </span>
+          <span
+            class="tw-text-center tw-text-blue-500 tw-text-5xl tw-font-bold"
+          >
+            0
+          </span>
+        </div>
+      </div>
+      <div
+        class="tw-bg-white tw-py-3 tw-items-center tw-flex tw-flex-col md:tw-flex-row sm:tw-flex-col lg:tw-flex-row xl:tw-flex-row tw-justify-between"
+      >
+        <div
+          class="MuiTabs-root tw-bg-white tw-rounded-lg tw-gap-2 css-1ujnqem-MuiTabs-root"
+        >
+          <div
+            class="MuiTabs-scroller MuiTabs-fixed css-jpln7h-MuiTabs-scroller"
+            style="overflow: hidden; margin-right: 0px; margin-bottom: 0px;"
+          >
+            <div
+              aria-label="tabs"
+              class="MuiTabs-flexContainer css-heg063-MuiTabs-flexContainer"
+              role="tablist"
+            >
+              <button
+                aria-selected="true"
+                class="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary Mui-selected tw-rounded-lg tw-bg-black tw-text-white css-1h9z7r5-MuiButtonBase-root-MuiTab-root"
+                role="tab"
+                tabindex="0"
+                type="button"
+              >
+                All
+                <span
+                  class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                />
+              </button>
+              <button
+                aria-selected="false"
+                class="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary tw-rounded-lg tw-bg-transparent tw-text-gray-500 css-1h9z7r5-MuiButtonBase-root-MuiTab-root"
+                role="tab"
+                tabindex="-1"
+                type="button"
+              >
+                Top 20
+                <span
+                  class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                />
+              </button>
+              <button
+                aria-selected="false"
+                class="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary tw-rounded-lg tw-bg-transparent tw-text-gray-500 css-1h9z7r5-MuiButtonBase-root-MuiTab-root"
+                role="tab"
+                tabindex="-1"
+                type="button"
+              >
+                Excellent
+                <span
+                  class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                />
+              </button>
+              <button
+                aria-selected="false"
+                class="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary tw-rounded-lg tw-bg-transparent tw-text-gray-500 css-1h9z7r5-MuiButtonBase-root-MuiTab-root"
+                role="tab"
+                tabindex="-1"
+                type="button"
+              >
+                Good
+                <span
+                  class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                />
+              </button>
+              <button
+                aria-selected="false"
+                class="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary tw-rounded-lg tw-bg-transparent tw-text-gray-500 css-1h9z7r5-MuiButtonBase-root-MuiTab-root"
+                role="tab"
+                tabindex="-1"
+                type="button"
+              >
+                Satisfactory
+                <span
+                  class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                />
+              </button>
+              <button
+                aria-selected="false"
+                class="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary tw-rounded-lg tw-bg-transparent tw-text-gray-500 css-1h9z7r5-MuiButtonBase-root-MuiTab-root"
+                role="tab"
+                tabindex="-1"
+                type="button"
+              >
+                Needs Improvement
+                <span
+                  class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                />
+              </button>
+            </div>
+            <span
+              class="MuiTabs-indicator css-1aquho2-MuiTabs-indicator"
+              style="display: none; left: 0px; width: 0px;"
+            />
+          </div>
+        </div>
+        <div
+          class="MuiFormControl-root MuiTextField-root css-1u3bzj6-MuiFormControl-root-MuiTextField-root"
+        >
+          <div
+            class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl MuiInputBase-adornedStart css-1q6at85-MuiInputBase-root-MuiOutlinedInput-root"
+          >
+            <div
+              class="MuiInputAdornment-root MuiInputAdornment-positionStart MuiInputAdornment-outlined MuiInputAdornment-sizeMedium css-ittuaa-MuiInputAdornment-root"
+            >
+              <span
+                class="notranslate"
+              >
+                ​
+              </span>
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                data-testid="SearchIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14"
+                />
+              </svg>
+            </div>
+            <input
+              aria-invalid="false"
+              class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputAdornedStart css-1o9s3wi-MuiInputBase-input-MuiOutlinedInput-input"
+              id=":r1:"
+              placeholder="Search"
+              type="text"
+              value=""
+            />
+            <fieldset
+              aria-hidden="true"
+              class="MuiOutlinedInput-notchedOutline css-1d3z3hw-MuiOutlinedInput-notchedOutline"
+            >
+              <legend
+                class="css-ihdtdm"
+              >
+                <span
+                  class="notranslate"
+                >
+                  ​
+                </span>
+              </legend>
+            </fieldset>
+          </div>
+        </div>
+      </div>
+      <div
+        class="tw-bg-white tw-shadow-md tw-p-4 MuiBox-root css-0"
+      >
+        <div
+          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiTableContainer-root css-11xur9t-MuiPaper-root-MuiTableContainer-root"
+        >
+          <table
+            class="MuiTable-root css-rqglhn-MuiTable-root"
+          >
+            <thead
+              class="MuiTableHead-root css-15wwp11-MuiTableHead-root"
+            >
+              <tr
+                class="MuiTableRow-root MuiTableRow-head css-1q1u3t4-MuiTableRow-root"
+              >
+                <th
+                  class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium tw-text-center tw-text-grey css-1ygcj2i-MuiTableCell-root"
+                  scope="col"
+                >
+                  Name
+                </th>
+                <th
+                  class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium tw-text-center tw-text-grey css-1ygcj2i-MuiTableCell-root"
+                  scope="col"
+                >
+                  Submission Time
+                </th>
+                <th
+                  class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium tw-text-center tw-text-grey css-1ygcj2i-MuiTableCell-root"
+                  scope="col"
+                >
+                  Overall Score
+                </th>
+                <th
+                  class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium tw-text-center tw-text-grey css-1ygcj2i-MuiTableCell-root"
+                  scope="col"
+                >
+                  Overall Rating
+                </th>
+                <th
+                  class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium tw-text-center tw-text-grey css-1ygcj2i-MuiTableCell-root"
+                  scope="col"
+                >
+                  Rag Implementation
+                </th>
+                <th
+                  class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium tw-text-center tw-text-grey css-1ygcj2i-MuiTableCell-root"
+                  scope="col"
+                >
+                  Fine-Tuning Language Model
+                </th>
+                <th
+                  class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium tw-text-center tw-text-grey css-1ygcj2i-MuiTableCell-root"
+                  scope="col"
+                >
+                  MultiModal AI Integration
+                </th>
+                <th
+                  class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium tw-text-center tw-text-grey css-1ygcj2i-MuiTableCell-root"
+                  scope="col"
+                >
+                  Python & Frameworks
+                </th>
+                <th
+                  class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium tw-text-center tw-text-grey css-1ygcj2i-MuiTableCell-root"
+                  scope="col"
+                >
+                  AI Model Deployment
+                </th>
+                <th
+                  class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium tw-text-center tw-text-grey css-1ygcj2i-MuiTableCell-root"
+                  scope="col"
+                >
+                  Analyzing User Feedback (RLHF)
+                </th>
+                <th
+                  class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium tw-text-center tw-text-grey css-1ygcj2i-MuiTableCell-root"
+                  scope="col"
+                >
+                  Problem Solving Capabilities
+                </th>
+                <th
+                  class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium tw-text-center tw-text-grey css-1ygcj2i-MuiTableCell-root"
+                  scope="col"
+                >
+                  Teamwork & Communications
+                </th>
+                <th
+                  class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium tw-text-center tw-text-grey css-1ygcj2i-MuiTableCell-root"
+                  scope="col"
+                >
+                  Motivation & Adaptability
+                </th>
+                <th
+                  class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium tw-text-center tw-text-grey css-1ygcj2i-MuiTableCell-root"
+                  scope="col"
+                >
+                  Add to Interview Shortlist
+                </th>
+              </tr>
+            </thead>
+            <tbody
+              class="MuiTableBody-root css-apqrd9-MuiTableBody-root"
+            />
+          </table>
+        </div>
+        <div
+          class="MuiBox-root css-0"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;

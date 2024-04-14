@@ -1,0 +1,34 @@
+/* Import Material Icons */
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
+/* Import Tailwind CSS */
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+/* Define font faces for Santo Variable */
+@font-face {
+  font-family: "Santo Variable";
+  src: url("/fonts/Satoshi-Variable.ttf") format("truetype"); /* Updated path */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Santo Variable Italic";
+  src: url("/fonts/Satoshi-Variable-Italic.ttf") format("truetype"); /* Updated path */
+  font-weight: 500; /* Medium */
+  font-style: italic; /* Set the font style to italic */
+}
+
+/* Apply the Santo Variable font to the body */
+body {
+  font-family: "Santo Variable";
+}
+
+/* Reset border widths */
+*,
+::before,
+::after {
+  border-width: 0;
+}
