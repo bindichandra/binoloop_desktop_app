@@ -42,16 +42,26 @@ You can start editing the page by modifying `src/pages/index.tsx`. The page auto
 
 Component structure
 
-Divided Dashbord in to different small component to maintain readability
-**Drawer** >> Left side drawer menu
-**Header** >> Which contains project selection, Dashboard/submission Tab bar/ userInfo
+Divided Dashbord in to different small component to maintain readability.
+
+**Drawer** >> Left side drawer menu.
+
+**Header** >> Which contains project selection, Dashboard/submission Tab bar/ userInfo.
+
 **Submissionstat** >> Which contain stats.
-**Dashboard** >> Contains table and filter tabs( All, Top 20 etc)
-Main index entry point file >> **Pages/ index.tsx**
-Api >> ** Pages/Api/SubmissionData.ts**
+
+**Dashboard** >> Contains table and filter tabs( All, Top 20 etc).
+
+Main index entry point file >> **Pages/ index.tsx**.
+
+Api >> **Pages/Api/SubmissionData.ts**.
+
 Also Added test cases for each react component.
-**Global.css** >> Added custom font (Santoshi Variable)
-Cutom hook to get screen size >> **hooks folder**
+
+**Global.css** >> Added custom font (Santoshi Variable).
+
+Cutom hook to get screen size >> **hooks folder**.
+
 All type declaration are under **Model** folder
 
 - [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
