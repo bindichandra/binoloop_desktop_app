@@ -40,7 +40,7 @@ You can start editing the page by modifying `src/pages/index.tsx`. The page auto
 
 ## Learn More
 
-Component structure
+**Component Structure**
 
 Divided Dashbord in to different small component to maintain readability.
 
