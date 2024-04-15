@@ -204,7 +204,7 @@ const Dashboard: React.FC = () => {
   return (
     <div className="tw-flex tw-mb-8">
       <DrawerMenu open={drawerOpen} setOpen={setDrawerOpen} />
-      <Box className="tw-flex tw-flex-col tw-w-full tw-mx-4">
+      <Box className="tw-flex tw-flex-col tw-w-full tw-max-w-screen-xl tw-mx-auto tw-px-4">
         <Header
           projects={projects}
           selectedProject={selectedProject}
@@ -217,12 +217,13 @@ const Dashboard: React.FC = () => {
           overallRatingCounts={overallRatingCounts}
           interviewShortlistCount={interviewShortlistCount}
         />
-        <div className="tw-bg-white tw-py-3 tw-items-center tw-flex tw-flex-col md:tw-flex-row sm:tw-flex-col lg:tw-flex-row xl:tw-flex-row tw-justify-between">
+        <div className="tw-bg-white tw-py-3 tw-flex tw-flex-col md:tw-flex-row sm:tw-flex-col lg:tw-flex-row xl:tw-flex-row tw-justify-between tw-items-center">
           <Tabs
             value={selectedTab}
             orientation={screenSize.width < 1000 ? "vertical" : "horizontal"}
             onChange={(e, newValue) => handleTabChange(newValue)}
             indicatorColor="primary"
+            data-testid="sorting-tabs"
             TabIndicatorProps={{ style: { display: "none" } }}
             textColor="primary"
             aria-label="tabs"
@@ -254,64 +255,65 @@ const Dashboard: React.FC = () => {
             }}
           />
         </div>
-        <Box className="tw-bg-white tw-shadow-md tw-p-4">
-          <TableContainer component={Paper}>
-            <Table>
-              <TableHead>
-                <TableRow>
-                  {tableHeaders.map((header) => (
-                    <TableCell
-                      key={header}
-                      className="tw-text-center tw-text-grey"
-                    >
-                      {header}
-                    </TableCell>
-                  ))}
-                </TableRow>
-              </TableHead>
 
-              <TableBody>
-                {filteredSubmissions.map((submission) => (
-                  <TableRow key={submission.id}>
-                    <TableCell className="tw-text-center tw-text-black tw-w-28">
-                      {submission.name}
-                    </TableCell>
-                    <TableCell className="tw-text-center tw-text-black tw-w-28">
-                      {submission.submissionTime}
-                    </TableCell>
-                    <TableCell className="tw-text-center tw-text-black tw-w-28">
-                      {submission.overallScore.toFixed(2)}
-                    </TableCell>
-                    <TableCell className="tw-text-center tw-text-black tw-w-28">
-                      {submission.overallRating}
-                    </TableCell>
-                    {Object.entries(submission)
-                      .filter(([key]) => !excludedProperties.includes(key))
-                      .map(([subject, score]) => (
-                        <TableCell key={subject} className="tw-text-center">
-                          <span
-                            className={`tw-inline-block tw-w-2.5 tw-h-2.5 tw-rounded-full`}
-                            style={{
-                              backgroundColor: colors[getOverallRating(score)],
-                            }}
-                          ></span>
-                        </TableCell>
-                      ))}
-                    <TableCell className="tw-text-center">
-                      <input
-                        type="checkbox"
-                        className="tw-w-4 tw-h-4 tw-bg-black"
-                        onChange={(e) => handleCheckboxChange(e.target.checked)}
-                        test-id="interview-shortlist-checkbox"
-                      />
-                    </TableCell>
-                  </TableRow>
+        <TableContainer component={Paper}>
+          <Table>
+            <TableHead>
+              <TableRow>
+                {tableHeaders.map((header, index) => (
+                  <TableCell
+                    key={index}
+                    className="tw-text-center tw-text-grey"
+                  >
+                    {header}
+                  </TableCell>
                 ))}
-              </TableBody>
-            </Table>
-          </TableContainer>
-          <Box></Box>
-        </Box>
+              </TableRow>
+            </TableHead>
+
+            <TableBody>
+              {filteredSubmissions.map((submission) => (
+                <TableRow key={submission.id}>
+                  <TableCell className="tw-text-center tw-text-black">
+                    {submission.name}
+                  </TableCell>
+                  <TableCell className="tw-text-center tw-text-black">
+                    {submission.submissionTime}
+                  </TableCell>
+                  <TableCell className="tw-text-center tw-text-black">
+                    {submission.overallScore.toFixed(2)}
+                  </TableCell>
+                  <TableCell className="tw-text-center tw-text-black">
+                    {submission.overallRating}
+                  </TableCell>
+                  {Object.entries(submission)
+                    .filter(([key]) => !excludedProperties.includes(key))
+                    .map(([subject, score], index) => (
+                      <TableCell
+                        key={index}
+                        className="tw-text-center tw-text-black"
+                      >
+                        <span
+                          className={`tw-inline-block tw-w-2.5 tw-h-2.5 tw-rounded-full`}
+                          style={{
+                            backgroundColor: colors[getOverallRating(score)],
+                          }}
+                        ></span>
+                      </TableCell>
+                    ))}
+                  <TableCell className="tw-text-center">
+                    <input
+                      type="checkbox"
+                      className="tw-w-4 tw-h-4 tw-bg-black"
+                      onChange={(e) => handleCheckboxChange(e.target.checked)}
+                      test-id="interview-shortlist-checkbox"
+                    />
+                  </TableCell>
+                </TableRow>
+              ))}
+            </TableBody>
+          </Table>
+        </TableContainer>
       </Box>
     </div>
   );

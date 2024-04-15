@@ -1,7 +1,8 @@
 import "@testing-library/jest-dom";
-import { render, waitFor, screen } from "@testing-library/react";
+import { render, waitFor, screen, fireEvent } from "@testing-library/react";
 import Dashboard from "./Dashboard";
 import axios from "axios";
+import { TabsProps } from "@mui/material";
 
 jest.mock("axios");
 
@@ -51,12 +52,23 @@ describe("Dashboard component", () => {
     mockedAxiosGet.mockRestore();
   });
 
-  test("handles fetch error", async () => {
+  test("Handles fetch error", async () => {
     const errorMessage = "Failed to fetch data";
     // Mock axios.get method to throw an error
     const mockedAxiosGet = jest.spyOn(axios, "get");
     mockedAxiosGet.mockRejectedValueOnce(new Error(errorMessage));
     render(<Dashboard />);
     mockedAxiosGet.mockRestore();
+  });
+
+  test("Handle tab change function", async () => {
+    const { getByTestId, getByText } = render(<Dashboard />);
+    expect(getByTestId("sorting-tabs")).toBeInTheDocument();
+    fireEvent.click(getByText("All"));
+  });
+  test("Handle search function", async () => {
+    const { getByPlaceholderText } = render(<Dashboard />);
+    const searchInput = getByPlaceholderText("Search");
+    fireEvent.change(searchInput, { target: { value: "John" } });
   });
 });
