@@ -1,10 +1,14 @@
 import React from "react";
-import { RatingCount, Submission } from "../../model/submission";
+import {
+  RatingCount,
+  Submission,
+  SubmissionData,
+} from "../../model/submission";
 import { Box } from "@mui/material";
 import { backgroundColors, colors } from "../../mocks/mockData";
 
 interface SubmissionStatsProps {
-  filteredSubmissions: Submission[];
+  filteredSubmissions: SubmissionData[];
   overallRatingCounts: RatingCount;
   interviewShortlistCount: number;
 }

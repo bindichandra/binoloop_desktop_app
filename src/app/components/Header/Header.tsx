@@ -4,9 +4,9 @@ import { ExpandMore, Person } from "@mui/icons-material";
 import useScreenSize from "../../hooks/useScreenSize";
 
 interface HeaderProps {
-  projects: { id: number; name: string }[];
-  selectedProject: number;
-  setSelectedProject: (id: number) => void;
+  projects: string[];
+  selectedProject: string;
+  handleProjectChange: (name: string) => void;
   selectedMainTab: number;
   setSelectedMainTab: (index: number) => void;
 }
@@ -14,7 +14,7 @@ interface HeaderProps {
 const Header: React.FC<HeaderProps> = ({
   projects,
   selectedProject,
-  setSelectedProject,
+  handleProjectChange,
   selectedMainTab,
   setSelectedMainTab,
 }) => {
@@ -23,15 +23,15 @@ const Header: React.FC<HeaderProps> = ({
     <Box className="tw-bg-white tw-py-4 tw-mb-4 tw-flex tw-justify-between tw-items-center tw-flex-row">
       <Select
         value={selectedProject}
-        onChange={(e) => setSelectedProject(e.target.value as number)}
+        onChange={(e) => handleProjectChange(e.target.value as string)}
         variant="standard"
         className="tw-text-22 tw-font-bold tw-w-48"
         disableUnderline={true}
         IconComponent={() => <ExpandMore fontSize="large" />}
       >
         {projects.map((project) => (
-          <MenuItem key={project.id} value={project.id}>
-            {project.name}
+          <MenuItem key={project} value={project}>
+            {project}
           </MenuItem>
         ))}
       </Select>

@@ -1,4 +1,9 @@
 export interface Submission {
+  project: string;
+  submissions: SubmissionData[];
+}
+
+export interface SubmissionData {
   id: number;
   name: string;
   submissionTime: string;
@@ -14,7 +19,6 @@ export interface Submission {
   teamWork: number;
   motivation: number;
 }
-
 export interface RatingCount {
   Excellent: number;
   Good: number;

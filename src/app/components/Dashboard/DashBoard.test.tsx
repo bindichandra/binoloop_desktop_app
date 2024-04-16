@@ -19,20 +19,25 @@ describe("Dashboard component", () => {
   test("Fetch data correctly", async () => {
     const mockData = [
       {
-        id: 1,
-        name: "John Doe",
-        submissionTime: "2021-09-01T12:00:00Z",
-        overallScore: 0,
-        overallRating: "",
-        ragImplementation: 40,
-        fineTuningLanguageModel: 35,
-        multiModelAIIntegration: 40,
-        python: 30,
-        aIModel: 25,
-        analysingUserFeedback: 35,
-        problemSolving: 40,
-        teamWork: 40,
-        motivation: 35,
+        project: "Project 1",
+        submissions: [
+          {
+            id: 1,
+            name: "Rhea Johnson",
+            submissionTime: "2021-09-01T12:00:00Z",
+            overallScore: 0,
+            overallRating: "",
+            ragImplementation: 40,
+            fineTuningLanguageModel: 39,
+            multiModelAIIntegration: 30,
+            python: 70,
+            aIModel: 45,
+            analysingUserFeedback: 65,
+            problemSolving: 35,
+            teamWork: 25,
+            motivation: 30,
+          },
+        ],
       },
     ];
 

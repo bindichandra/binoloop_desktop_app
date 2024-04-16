@@ -7,8 +7,8 @@ describe("Header component", () => {
     const { container } = render(
       <Header
         projects={[]}
-        selectedProject={0}
-        setSelectedProject={jest.fn()}
+        selectedProject={""}
+        handleProjectChange={jest.fn()}
         selectedMainTab={1}
         setSelectedMainTab={jest.fn()}
       />

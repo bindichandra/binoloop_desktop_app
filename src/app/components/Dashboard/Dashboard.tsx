@@ -18,7 +18,11 @@ import {
   Paper,
 } from "@mui/material";
 import DrawerMenu from "../Drawer/DrawerMenu";
-import { RatingCount, Submission } from "../../model/submission";
+import {
+  RatingCount,
+  Submission,
+  SubmissionData,
+} from "../../model/submission";
 import Search from "@mui/icons-material/Search";
 import Header from "../Header/Header";
 import SubmissionStats from "../SubmissionState/SubmissionState";
@@ -41,15 +45,17 @@ const excludedProperties = [
 ];
 
 const Dashboard: React.FC = () => {
-  const [submissions, setSubmissions] = useState<Submission[]>([]);
+  const [submissionData, setSubmissionData] = useState<Submission[]>([]);
+  const [submissions, setSubmissions] = useState<SubmissionData[]>([]);
+  const [projects, setProjects] = useState<string[]>([]);
   const [loading, setLoading] = useState<boolean>(false);
-  const [filteredSubmissions, setFilteredSubmissions] = useState<Submission[]>(
-    []
-  );
+  const [filteredSubmissions, setFilteredSubmissions] = useState<
+    SubmissionData[]
+  >([]);
   const [searchTerm, setSearchTerm] = useState<string>("");
   const [drawerOpen, setDrawerOpen] = useState<boolean>(false);
   const [selectedTab, setSelectedTab] = useState<number>(0);
-  const [selectedProject, setSelectedProject] = useState<number>(1);
+  const [selectedProject, setSelectedProject] = useState<string>("");
   const [selectedMainTab, setSelectedMainTab] = useState<number>(0);
   const [interviewShortlistCount, setInterviewShortlistCount] =
     useState<number>(0);
@@ -101,6 +107,11 @@ const Dashboard: React.FC = () => {
     }
   };
 
+  const handleProjectChange = (project: string) => {
+    setSelectedProject(project);
+    getSubmissions(project);
+  };
+
   const handleSearch = useCallback(
     (e: React.ChangeEvent<HTMLInputElement>) => {
       const searchText = e.target.value.toLowerCase();
@@ -127,7 +138,7 @@ const Dashboard: React.FC = () => {
       Satisfactory: 0,
       "Needs Improvement": 0,
     };
-    filteredSubmissions.forEach((submission: Submission) => {
+    filteredSubmissions.forEach((submission: SubmissionData) => {
       counts[submission.overallRating as keyof RatingCount]++;
     });
     return counts;
@@ -141,36 +152,9 @@ const Dashboard: React.FC = () => {
         setLoading(true);
         const result = await axios.get("/api/submissionData");
         if (result.status === 200) {
-          const updatedSubmissions = result.data.map(
-            (submission: Submission) => ({
-              ...submission,
-              overallScore:
-                (submission.ragImplementation +
-                  submission.fineTuningLanguageModel +
-                  submission.multiModelAIIntegration +
-                  submission.python +
-                  submission.aIModel +
-                  submission.analysingUserFeedback +
-                  submission.problemSolving +
-                  submission.teamWork +
-                  submission.motivation) /
-                9,
-              overallRating: getOverallRating(
-                (submission.ragImplementation +
-                  submission.fineTuningLanguageModel +
-                  submission.multiModelAIIntegration +
-                  submission.python +
-                  submission.aIModel +
-                  submission.analysingUserFeedback +
-                  submission.problemSolving +
-                  submission.teamWork +
-                  submission.motivation) /
-                  9
-              ),
-            })
-          );
-          setSubmissions(updatedSubmissions);
-          setFilteredSubmissions(updatedSubmissions);
+          setProjects(result.data.map((item: Submission) => item.project));
+          setSelectedProject(result.data[0].project);
+          setSubmissionData(result.data);
           setLoading(false);
         }
       } catch (error) {
@@ -180,6 +164,53 @@ const Dashboard: React.FC = () => {
     }
     fetchSubmissionData();
   }, []);
+
+  const getSubmissions = useCallback(
+    (project: string) => {
+      // Extract submissions from the fetched data
+      const result = submissionData
+        .filter((submission) => submission.project === project)
+        .flatMap((item: Submission) => item.submissions);
+
+      // Calculate overall score and rating for each submission
+      const updatedSubmissions = result.map((submission: SubmissionData) => ({
+        ...submission,
+        overallScore:
+          (submission.ragImplementation +
+            submission.fineTuningLanguageModel +
+            submission.multiModelAIIntegration +
+            submission.python +
+            submission.aIModel +
+            submission.analysingUserFeedback +
+            submission.problemSolving +
+            submission.teamWork +
+            submission.motivation) /
+          9,
+        overallRating: getOverallRating(
+          (submission.ragImplementation +
+            submission.fineTuningLanguageModel +
+            submission.multiModelAIIntegration +
+            submission.python +
+            submission.aIModel +
+            submission.analysingUserFeedback +
+            submission.problemSolving +
+            submission.teamWork +
+            submission.motivation) /
+            9
+        ),
+      }));
+      // Set the submissions and filtered submissions state
+      setSubmissions(updatedSubmissions);
+      setFilteredSubmissions(updatedSubmissions);
+    },
+    [submissionData]
+  );
+
+  useEffect(() => {
+    if (selectedProject) {
+      getSubmissions(selectedProject);
+    }
+  }, [selectedProject, getSubmissions]);
 
   // Function to get overall rating based on overall score
   const getOverallRating = (score: number) => {
@@ -208,7 +239,7 @@ const Dashboard: React.FC = () => {
         <Header
           projects={projects}
           selectedProject={selectedProject}
-          setSelectedProject={setSelectedProject}
+          handleProjectChange={handleProjectChange}
           selectedMainTab={selectedMainTab}
           setSelectedMainTab={setSelectedMainTab}
         />
